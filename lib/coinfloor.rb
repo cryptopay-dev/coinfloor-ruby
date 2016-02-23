@@ -63,6 +63,7 @@ module Coinfloor
       return response_body
     end
   end
+
   def self.bitcoin_deposit_address
     # returns the deposit address
     self.sanity_check!
