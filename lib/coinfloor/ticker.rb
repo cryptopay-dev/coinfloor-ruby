@@ -1,9 +1,9 @@
-module Bitstamp
-  class Ticker < Bitstamp::Model
+module Coinfloor
+  class Ticker < Coinfloor::Model
     attr_accessor :last, :high, :low, :volume, :bid, :ask, :timestamp, :vwap
 
     def self.from_api
-      Bitstamp::Helper.parse_object!(Bitstamp::Net.get('/ticker').to_str, self)
+      Coinfloor::Helper.parse_object!(Coinfloor::Net.get('/ticker').to_str, self)
     end
 
     def self.method_missing method, *args

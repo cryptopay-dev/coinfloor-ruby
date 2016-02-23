@@ -16,11 +16,11 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "bitstamp"
-  gem.homepage = "http://github.com/kojnapp/bitstamp"
+  gem.name = "coinfloor"
+  gem.homepage = "http://github.com/kojnapp/coinfloor"
   gem.license = "MIT"
-  gem.summary = %Q{Bitstamp Ruby API}
-  gem.description = %Q{Ruby API for use with bitstamp.}
+  gem.summary = %Q{Coinfloor Ruby API}
+  gem.description = %Q{Ruby API for use with coinfloor.}
   gem.email = "stygeo@gmail.com"
   gem.authors = ["Jeffrey Wilcke"]
   # dependencies defined in Gemfile
@@ -45,7 +45,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "bitstamp #{version}"
+  rdoc.title = "coinfloor #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

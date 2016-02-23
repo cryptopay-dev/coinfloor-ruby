@@ -1,4 +1,4 @@
-module Bitstamp
+module Coinfloor
   class Model
     attr_accessor :error, :message
 
