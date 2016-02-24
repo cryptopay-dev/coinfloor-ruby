@@ -22,7 +22,8 @@ module Coinfloor
   end
 
   class UserTransaction < Coinfloor::Model
-    attr_accessor :datetime, :id, :type, :usd, :btc, :fee, :order_id, :btc_usd, :nonce
+    attr_accessor :datetime, :id, :type, :usd, :btc, :fee, :order_id, :btc_usd, :nonce,
+                  :xbt, :xbt_gbp, :gbp #coinfloor GBP attrs
   end
 
   # adding in methods to pull the last public trades list
