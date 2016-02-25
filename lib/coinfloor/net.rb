@@ -1,7 +1,7 @@
 module Coinfloor
   module Net
     def self.to_uri(path)
-      return "https://webapi.coinfloor.co.uk:8090/bist/XBT/GBP#{path}/"
+      return "https://webapi.coinfloor.co.uk:8090/bist/XBT/#{Coinfloor.currency.upcase}#{path}/"
     end
 
     def self.get(path, options={})
